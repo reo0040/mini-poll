@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-lg p-6 space-y-4">
       <h1 className="text-2xl font-bold">ミニ投票</h1>
-      <p>Q. 冁E��支持をどぁE��E��ますか�E�E/p>
+      <p>Q. 内閣支持をどう考えますか？</p>
 
       <div className="space-y-2">
         <label className="flex items-center gap-2">
@@ -41,7 +41,8 @@ export default function HomePage() {
             checked={choice === "support"}
             onChange={() => setChoice("support")}
           />
-          支持E        </label>
+          支持
+        </label>
 
         <label className="flex items-center gap-2">
           <input
@@ -50,7 +51,8 @@ export default function HomePage() {
             checked={choice === "neutral"}
             onChange={() => setChoice("neutral")}
           />
-          どちらでもなぁE        </label>
+          どちらでもない
+        </label>
 
         <label className="flex items-center gap-2">
           <input
@@ -59,7 +61,8 @@ export default function HomePage() {
             checked={choice === "oppose"}
             onChange={() => setChoice("oppose")}
           />
-          不支持E        </label>
+          不支持
+        </label>
       </div>
 
       <button
@@ -73,7 +76,7 @@ export default function HomePage() {
       {error && <p className="text-red-600">エラー: {error}</p>}
 
       <p className="text-xs opacity-70">
-        ※ログインなし。生チE�Eタは公開せず、E��計�Eみ表示
+        ※ログインなしのデモです。正確性は保証しません（生データは公開せず、集計のみ表示）
       </p>
     </main>
   );
